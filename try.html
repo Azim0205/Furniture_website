@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+ </style>
+  <title>Contact Us Form</title>
+</head>
+<body>
+  <div class="container">
+    
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+ 
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" id="mobile" name="mobile" minlength="10" maxlength="10" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script >
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // You can perform further validation and data processing here
+
+  alert("Form submitted successfully!"); // You can replace this with your desired action
+});
+
+  </script>
+</body>
+</html>

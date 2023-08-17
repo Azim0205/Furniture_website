@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="with=devie-width, initial scale=1.0">
+    <title>LifeStyle Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/869f9d0c5c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      
+    <header>
+        <div class="navbar">
+            <div class="logo" ><a href="index.html">LifeStyle Furniture</a>
+            </div>
+            <ul class="links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+            <a href="contact.html" class="action_btn">Contact US</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    <div class="dropdown_menu ">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="review.html">Reviews</a></li>
+       <li> <a href="contact.html" class="action_btn">Contact Us</a></li>
+    </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>High Quality &<h2>Durable Furniture</h2>  </h1>
+            <p>Customize your interior as per your choice</p>
+            <div class="button-container">
+           <a href="product.html">  <button class="my-button">Products</button></a>
+          <a href="services.html"><button class="my-button">Services</button></a>   
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="services.html">Manufacture</a></li>
+                        <li><a href="services.html">shipping</a></li>
+                        <li><a href="services.html">Interior</a></li>
+                        <li><a href="services.html">Workshop</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="product.html">Sofa-Set</a></li>
+                        <li><a href="product.html">Bed</a></li>
+                        <li><a href="product.html">Wardrobe</a></li>
+                        <li><a href="product.html">Dressing-Table</a></li>
+                        <li><a href="product.html">Chairs</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100014421573436"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/qr/JB7YJPGAUNFPM1"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/mukaddarshaikh021?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                       
+                    </div>
+                </div>
+               
+    <footer>
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </footer>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; <a href="mailto:techtitans258@gmail.com">techtitans258@gmail.com</a><br>All rights reserved.</p>
+            </div>
+        </div>
+  
+<script >
+    const toggleBtn=document.querySelector('.toggle_btn')
+    const toggleBtnIcon=document.querySelector('.toggle_btn i')
+    const dropDownMenu=document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick=function (){
+        dropDownMenu.classList.toggle('open')
+   
+    const isOpen=dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ?'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
+    }
+</script>
+</body>
+
+</html>
